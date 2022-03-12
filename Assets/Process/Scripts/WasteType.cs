@@ -6,6 +6,9 @@
         Metal,
         Glass,
         Paper,
-        Organic
+        Organic,
+        PlasticClean,
+        MetalClean,
+        GlassClean
     }
 }
