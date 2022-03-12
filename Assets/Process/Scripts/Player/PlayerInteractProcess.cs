@@ -10,8 +10,10 @@ namespace ProcessMachine
         [SerializeField] private string _tagToCompare;
 
         IProcessMachine _processMachine;
+        WasteInteract _currentWasteInteract;
 
         PlayerInventory _playerInventory;
+
         
 
         private void Start()
@@ -39,7 +41,11 @@ namespace ProcessMachine
             if (!Input.GetKeyDown(KeyCode.E))
                 return;
 
-            //objects interact
+            if (_currentWasteInteract != null)
+            {
+                SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
+                _currentWasteInteract.GrabObject();
+            }
 
             if (_processMachine == null)
                 return;
