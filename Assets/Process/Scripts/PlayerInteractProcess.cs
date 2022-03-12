@@ -14,11 +14,8 @@ namespace ProcessMachine
         private void OnTriggerEnter(Collider other)
         {
             if (IsTheSameTag(other))
-            {
-                _processMachine = other.gameObject.GetComponent<ICompareAndSetProcessMachine>();
-                print(_processMachine == null);
-
-            }
+               _processMachine = other.gameObject.GetComponent<ICompareAndSetProcessMachine>();
+            
         }
 
         private bool IsTheSameTag(Collider other) => other.tag == _tagToCompare;
