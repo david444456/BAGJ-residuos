@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float velocity = 2.0f;
-
+    [SerializeField] float velocityWalk = 2.0f;
+    [SerializeField] float velocityRun = 4.0f;
     [SerializeField] float rotationSpeed = 720.0f;
 
+    float velocity = 2.0f;
     CharacterController characterController;
 
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -26,9 +27,9 @@ public class PlayerMovement : MonoBehaviour
         mover.Normalize();
 
         if (runPressed)
-            velocity = 4.0f;
+            velocity = velocityRun;
         else
-            velocity = 2.0f;
+            velocity = velocityWalk;
 
         mover *= Time.deltaTime * velocity;
 

@@ -39,8 +39,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3284586834568870821}
-  - component: {fileID: 3284586834568870842}
   - component: {fileID: 3284586834568870843}
+  - component: {fileID: 4141468499206485333}
   m_Layer: 0
   m_Name: ProcessBase
   m_TagString: Process
@@ -66,19 +66,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &3284586834568870842
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284586834568870840}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.89
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3284586834568870843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +81,19 @@ MonoBehaviour:
   _objectFirstState: {fileID: 3284586834714545635}
   _objectWorking: {fileID: 3284586835020563881}
   _objectFull: {fileID: 3284586833890914250}
+--- !u!65 &4141468499206485333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3284586834568870840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.89, y: 1, z: 1.37}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3284586834714545635
 GameObject:
   m_ObjectHideFlags: 0
