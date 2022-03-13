@@ -11,7 +11,14 @@ namespace ProcessMachine
         public WasteBase CurrentObjectInventory
         {
             get => _currentObjectInventory;
-            set => _currentObjectInventory = value;
+            set => SetCurrentObjectInventory(value);
+        }
+
+        private void SetCurrentObjectInventory(WasteBase wasteBase)
+        {
+            _currentObjectInventory = wasteBase;
+
+            GetComponentInChildren<animationStateController>().SetCarryHasValue(_currentObjectInventory!=null);
         }
 
         private void Update()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class animationStateController : MonoBehaviour
 {
+    [SerializeField] private bool _useBackFlip = false;
+
     Animator animator;
     int isWalkingHash;
     int isRunningHash;
@@ -18,35 +20,44 @@ public class animationStateController : MonoBehaviour
         isCarryingHash = Animator.StringToHash("isCarrying");
     }
 
+    public void SetCarryHasValue(bool newValue)
+    {
+        animator.SetBool(isCarryingHash, newValue);
+    }
+
     // Update is called once per frame
     void Update()
     {
         bool isRunning = animator.GetBool(isRunningHash);
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isCarrying = animator.GetBool(isCarryingHash);
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         bool runPressed = Input.GetKey(KeyCode.LeftShift);
+
         Vector3 mover = new Vector3(horizontal, 0, vertical);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && _useBackFlip)
         {
             animator.Play("Backflip");
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !isCarrying)
+        /*if (Input.GetKeyDown(KeyCode.E) && !isCarrying)
         {
             animator.SetBool(isCarryingHash, true);
         }            
+
         else if (Input.GetKeyDown(KeyCode.E) && isCarrying)
         {
             animator.SetBool(isCarryingHash, false);
-        }            
+        }    */        
 
         if (!isWalking && mover != Vector3.zero)
         {
             animator.SetBool(isWalkingHash, true);
         }
+
         if (isWalking && mover == Vector3.zero)
         {
             animator.SetBool(isWalkingHash, false);
@@ -56,10 +67,10 @@ public class animationStateController : MonoBehaviour
         {
             animator.SetBool(isRunningHash, true);
         }
+
         if (isRunning && (mover == Vector3.zero || !runPressed))
         {
             animator.SetBool(isRunningHash, false);
         }
-
     }
 }

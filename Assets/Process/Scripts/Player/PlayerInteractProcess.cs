@@ -6,7 +6,6 @@ namespace ProcessMachine
 {
     public class PlayerInteractProcess : MonoBehaviour
     {
-        [SerializeField] WasteBase[] _objects;
         [SerializeField] private string _tagProcessMachine;
 
         IProcessMachine _processMachine;
@@ -66,7 +65,6 @@ namespace ProcessMachine
 
         private void SetCurrentWasteInInventory(WasteBase newWasteBase)
         {
-            print(newWasteBase.CurrentWasteType);
             _playerInventory.CurrentObjectInventory = newWasteBase;
         }
 
