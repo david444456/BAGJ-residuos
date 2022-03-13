@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &224034764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 224034764, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
+  m_PrefabInstance: {fileID: 2058139365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &332749298 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 332749298, guid: 5fb99ac62ea8f704583c78a3446a8b36, type: 3}
@@ -204,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427940635}
   m_LocalRotation: {x: 0.49325877, y: 0, z: 0, w: 0.86988264}
-  m_LocalPosition: {x: 5.6890755, y: 12.239452, z: -1.392657}
+  m_LocalPosition: {x: 5.143133, y: 12.239452, z: -0.9393978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1521912309}
@@ -228,14 +233,14 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 1
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1843713331}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 3000
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -423,7 +428,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -438,7 +443,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 3000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -454,7 +459,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &963194228
@@ -465,7 +470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.49325877, y: -0, z: -0, w: 0.86988264}
-  m_LocalPosition: {x: 5.6890755, y: 12.239452, z: -1.392657}
+  m_LocalPosition: {x: 5.143133, y: 12.239452, z: -0.9393978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1806479525}
@@ -859,36 +864,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc10ce20cd2faea4ca8cb6505e5861d5, type: 3}
---- !u!1 &1843713328 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5953276444060051696, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
-  m_PrefabInstance: {fileID: 2058139365}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1843713329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843713328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9c4247864f1444094fc1eb853810f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1843713330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843713328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e6f931c0f028341bf1369b567d71f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tagProcessMachine: Process
 --- !u!4 &1843713331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5953276444060051698, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
@@ -901,6 +876,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1843713329, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
+      propertyPath: _transformSpawnObject
+      value: 
+      objectReference: {fileID: 224034764}
     - target: {fileID: 5953276444060051696, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: m_Name
       value: Player
@@ -911,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953276444060051698, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.775942
+      value: 10.23
       objectReference: {fileID: 0}
     - target: {fileID: 5953276444060051698, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -919,7 +898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953276444060051698, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.200741
+      value: 7.654
       objectReference: {fileID: 0}
     - target: {fileID: 5953276444060051698, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1045,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1053,7 +1032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1065,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 373fa561d9b585a4f9f20589ff76bccc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

@@ -40,7 +40,6 @@ namespace ProcessMachine
 
         public bool IsFinishWorking()
         {
-            Debug.Log( "HLA ES: "+ WaitingAndTimeWorkingBiggerThanTimeToWork());
             return WaitingAndTimeWorkingBiggerThanTimeToWork() && _currentWaste != null;
         }
 

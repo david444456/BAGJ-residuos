@@ -7,6 +7,7 @@ namespace ProcessMachine
     public class WasteBase : MonoBehaviour
     {
         [SerializeField] WasteType _wasteTypeToDoProcess;
+        [SerializeField] public GameObject GameObjectToSpawnCarry;
 
         ObjectPolling _objectPolling;
 

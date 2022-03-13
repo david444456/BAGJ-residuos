@@ -6,6 +6,8 @@ namespace ProcessMachine
 {
     public class PlayerInventory : MonoBehaviour
     {
+        [SerializeField] private Transform _transformSpawnObject;
+
         private WasteBase _currentObjectInventory;
 
         public WasteBase CurrentObjectInventory
@@ -18,7 +20,30 @@ namespace ProcessMachine
         {
             _currentObjectInventory = wasteBase;
 
+            if (_currentObjectInventory != null)
+                InstanceAndDeleteObjectsInPlayer();
+            else
+                DestroyAllObjectsInTransformSpawnPlayer();
+
             GetComponentInChildren<animationStateController>().SetCarryHasValue(_currentObjectInventory!=null);
+        }
+
+        private void InstanceAndDeleteObjectsInPlayer()
+        {
+            DestroyAllObjectsInTransformSpawnPlayer();
+
+            Instantiate(_currentObjectInventory.GameObjectToSpawnCarry, _transformSpawnObject);
+        }
+
+        private void DestroyAllObjectsInTransformSpawnPlayer()
+        {
+            var list = _transformSpawnObject.GetComponentsInChildren<Transform>();
+
+            foreach (Transform trans in list)
+            {
+                if (trans == _transformSpawnObject) continue;
+                Destroy(trans.gameObject);
+            }
         }
 
         private void Update()

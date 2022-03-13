@@ -26,6 +26,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wasteTypeToDoProcess: 2
+  GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 0342452205b976745af751e4714b07f0, type: 3}
 --- !u!1001 &5914001138415810767
 PrefabInstance:
   m_ObjectHideFlags: 0
