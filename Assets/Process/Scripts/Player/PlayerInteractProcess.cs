@@ -7,7 +7,7 @@ namespace ProcessMachine
     public class PlayerInteractProcess : MonoBehaviour
     {
         [SerializeField] WasteBase[] _objects;
-        [SerializeField] private string _tagToCompare;
+        [SerializeField] private string _tagProcessMachine;
 
         IProcessMachine _processMachine;
         WasteInteract _currentWasteInteract;
@@ -23,17 +23,25 @@ namespace ProcessMachine
 
         private void OnTriggerEnter(Collider other)
         {
-            if (IsTheSameTag(other))
+            if (IsTheSameTag(other, _tagProcessMachine))
                _processMachine = other.gameObject.GetComponent<IProcessMachine>();
-            
+
+            if (IsTheSameTag(other, "Waste"))
+                _currentWasteInteract = other.gameObject.GetComponent<WasteInteract>();
+
         }
 
-        private bool IsTheSameTag(Collider other) => other.tag == _tagToCompare;
+        private bool IsTheSameTag(Collider other, string tagString) => other.tag == tagString;
 
         private void OnTriggerExit(Collider other)
         {
-            if (IsTheSameTag(other))
+            if (IsTheSameTag(other, _tagProcessMachine))
                 _processMachine = null;
+
+            if (IsTheSameTag(other, "Waste"))
+                _currentWasteInteract = null;
+
+            print("Exit");
         }
 
         private void Update()
@@ -41,7 +49,7 @@ namespace ProcessMachine
             if (!Input.GetKeyDown(KeyCode.E))
                 return;
 
-            if (_currentWasteInteract != null)
+            if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf)
             {
                 SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
                 _currentWasteInteract.GrabObject();
@@ -58,6 +66,7 @@ namespace ProcessMachine
 
         private void SetCurrentWasteInInventory(WasteBase newWasteBase)
         {
+            print(newWasteBase.CurrentWasteType);
             _playerInventory.CurrentObjectInventory = newWasteBase;
         }
 

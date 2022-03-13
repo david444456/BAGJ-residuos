@@ -18,6 +18,14 @@ namespace ProcessMachine
 
         public WasteType GetWasteType => _wasteTypePool;
 
+        private void Start()
+        {
+            foreach (WasteBase waste in initialObjects)
+            {
+                waste.SetActualObjectPolling(this);
+            }
+        }
+
         public WasteBase GetNewObjectWaste(bool ignoreMaxCount)
         {
             WasteBase returnObject = null;
@@ -39,7 +47,11 @@ namespace ProcessMachine
 
             if (_objectsWorking.Count < _maxCountObjectsInScene || ignoreMaxCount)
             {
-                returnObject = Instantiate(_gameObjectToSpawn, this.transform).GetComponent<WasteBase>();
+                returnObject = 
+                    Instantiate(_gameObjectToSpawn, this.transform)
+                    .GetComponent<WasteBase>();
+
+                returnObject.SetActualObjectPolling(this);
 
                 _objectsWorking.Add(returnObject);
                 

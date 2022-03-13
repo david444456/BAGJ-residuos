@@ -32,6 +32,7 @@ namespace ProcessMachine
 
         public void GrabObject()
         {
+            CurrentWaste.ReturnThisObjectToThePool();
             print("Call the pool");
         }
 

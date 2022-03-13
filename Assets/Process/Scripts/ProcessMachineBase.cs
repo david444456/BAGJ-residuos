@@ -9,6 +9,7 @@ namespace ProcessMachine
     {
         [Header("Parameters")]
         [SerializeField] protected float _timeToWork = 2f;
+        [SerializeField] private Transform _trasnformSpawnObject;
 
         [Header("Process")]
         [SerializeField] protected WasteType[] _wasteTypesToDoProcess;
@@ -20,6 +21,7 @@ namespace ProcessMachine
 
         private float _timeWorking = Mathf.Infinity;
         private bool _isWaitingByExitProduct = false;
+        private bool _isFinishWork = false;
 
         private void Start()
         {
@@ -28,7 +30,7 @@ namespace ProcessMachine
 
         protected virtual void Update()
         {
-            if (WaitingAndTimeWorkingBiggerThanTimeToWork())
+            if (WaitingAndTimeWorkingBiggerThanTimeToWork() && !_isFinishWork)
                 FinishWorkProcess();
 
             _timeWorking += Time.deltaTime;
@@ -38,6 +40,7 @@ namespace ProcessMachine
 
         public bool IsFinishWorking()
         {
+            Debug.Log( "HLA ES: "+ WaitingAndTimeWorkingBiggerThanTimeToWork());
             return WaitingAndTimeWorkingBiggerThanTimeToWork() && _currentWaste != null;
         }
 
@@ -46,12 +49,17 @@ namespace ProcessMachine
             if (_currentWaste == null)
                 throw new Exception("This is not the correct way to call this method");
 
+            _isWaitingByExitProduct = false;
+            _isFinishWork = false;
+
+            _currentWaste.transform.position = _trasnformSpawnObject.position;
+
             CurrentWaste newWaste = _currentWaste;
             _currentWaste = null;
 
             _viewProcessMachine.SetNormalState();
 
-            return _currentWaste;
+            return newWaste;
         }
 
         public virtual bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase)
@@ -76,7 +84,7 @@ namespace ProcessMachine
                         result++;
                 }
             }
-            print(result);
+
             bool isTheSameCount = result == wasteObjectsBase.Length;
             return isTheSameCount;
         }
@@ -93,8 +101,9 @@ namespace ProcessMachine
 
         private void FinishWorkProcess()
         {
-            _isWaitingByExitProduct = false;
             _currentWaste = _factoryWaste.GetNewObjectWaste(_resultWasteType, true) as CurrentWaste;
+            _currentWaste.gameObject.SetActive(false);
+            _isFinishWork = true;
 
             _viewProcessMachine.SetFinishState();
             //active object to show finish object
