@@ -33,7 +33,6 @@ namespace ProcessMachine
         public void GrabObject()
         {
             CurrentWaste.ReturnThisObjectToThePool();
-            print("Call the pool");
         }
 
         private bool ColliderIsPlayer(Collider other) => other.tag == "Player";
