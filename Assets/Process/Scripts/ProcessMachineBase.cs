@@ -26,6 +26,9 @@ namespace ProcessMachine
         private void Start()
         {
             _viewProcessMachine = GetComponent<ViewProcessMachine>();
+
+            if (_factoryWaste == null)
+                _factoryWaste = FindObjectOfType<FactoryWaste>();
         }
 
         protected virtual void Update()
@@ -43,22 +46,32 @@ namespace ProcessMachine
             return WaitingAndTimeWorkingBiggerThanTimeToWork() && _currentWaste != null;
         }
 
-        public WasteBase GetActualWasteFinishWork()
+        public virtual WasteBase GetActualWasteFinishWork()
         {
             if (_currentWaste == null)
                 throw new Exception("This is not the correct way to call this method");
 
-            _isWaitingByExitProduct = false;
-            _isFinishWork = false;
+            SetBoolWaitingAndWorkingToFalse();
 
             _currentWaste.transform.position = _trasnformSpawnObject.position;
 
             CurrentWaste newWaste = _currentWaste;
-            _currentWaste = null;
+            SetCurrentWasteToNull();
 
             _viewProcessMachine.SetNormalState();
 
             return newWaste;
+        }
+
+        protected void SetBoolWaitingAndWorkingToFalse()
+        {
+            _isWaitingByExitProduct = false;
+            _isFinishWork = false;
+        }
+
+        protected void SetCurrentWasteToNull()
+        {
+            _currentWaste = null;
         }
 
         public virtual bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase)

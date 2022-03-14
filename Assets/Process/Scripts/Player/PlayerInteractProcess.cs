@@ -48,8 +48,11 @@ namespace ProcessMachine
             if (!Input.GetKeyDown(KeyCode.E))
                 return;
 
-            if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf)
+            if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf )
             {
+                if (_playerInventory.CurrentObjectInventory != null)
+                    return;
+
                 SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
                 _currentWasteInteract.GrabObject();
             }

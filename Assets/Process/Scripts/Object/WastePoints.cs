@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace ProcessMachine
 {
-    public class ProcessCleaner : ProcessMachineBase<WastePoints>
+    public class WastePoints : WasteBase
     {
-        
+        [SerializeField] public int _pointsToAdd = 10;
     }
 }

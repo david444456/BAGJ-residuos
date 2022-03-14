@@ -13,7 +13,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 1, z: 0.6}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &332749298
+--- !u!114 &3158518602805147237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22,11 +22,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6737474542756381856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bfdf1af5c16d2f4baf57a7898f46622, type: 3}
+  m_Script: {fileID: 11500000, guid: 1970485a428a0994b9ec2ae8c2318627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wasteTypeToDoProcess: 7
-  GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 0342452205b976745af751e4714b07f0, type: 3}
+  _wasteTypeToDoProcess: 5
+  GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 852e0f64dcd304246875dd4ac0ef5ee9, type: 3}
+  _pointsToAdd: 10
 --- !u!1001 &5914001138415810767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37,7 +38,7 @@ PrefabInstance:
     - target: {fileID: 129020656685125867, guid: 0a32dbb0cf3882a40817becf1d674a00, type: 3}
       propertyPath: CurrentWaste
       value: 
-      objectReference: {fileID: 332749298}
+      objectReference: {fileID: 0}
     - target: {fileID: 1122119604483456109, guid: 0a32dbb0cf3882a40817becf1d674a00, type: 3}
       propertyPath: m_RootOrder
       value: 0
