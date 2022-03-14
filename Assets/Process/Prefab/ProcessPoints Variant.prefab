@@ -5003,7 +5003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3284586834568870840, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_Name
-      value: ProcessPoints
+      value: ProcessPoints Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4141468499206485333, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_Size.x

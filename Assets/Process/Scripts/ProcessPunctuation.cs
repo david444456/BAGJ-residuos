@@ -19,6 +19,8 @@ namespace ProcessMachine
 
             SetCurrentWasteToNull();
 
+            _viewProcessMachine.SetNormalState();
+
             return null;
         }
     }
