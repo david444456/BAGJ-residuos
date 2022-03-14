@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float velocityRun = 4.0f;
     [SerializeField] float rotationSpeed = 720.0f;
 
+    [Header("To fix")]
+    [SerializeField] float yMin = 0.25f;
+
     float velocity = 2.0f;
     CharacterController characterController;
 
@@ -42,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
             characterController.transform.rotation = 
                 Quaternion.RotateTowards(characterController.transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
-        
+
+        if (transform.position.y > yMin)
+            transform.position = new Vector3(transform.position.x, yMin, transform.position.z);
     }
 }

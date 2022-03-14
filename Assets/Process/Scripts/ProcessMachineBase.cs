@@ -23,7 +23,7 @@ namespace ProcessMachine
         private bool _isWaitingByExitProduct = false;
         private bool _isFinishWork = false;
 
-        private void Start()
+        protected virtual void Start()
         {
             _viewProcessMachine = GetComponent<ViewProcessMachine>();
 

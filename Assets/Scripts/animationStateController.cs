@@ -25,6 +25,11 @@ public class animationStateController : MonoBehaviour
         animator.SetBool(isCarryingHash, newValue);
     }
 
+    public void SetPlayJumpBackFlip()
+    {
+        animator.Play("Backflip");
+    }
+
     // Update is called once per frame
     void Update()
     {

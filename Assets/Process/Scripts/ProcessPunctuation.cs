@@ -8,6 +8,15 @@ namespace ProcessMachine
     {
         [SerializeField] ParticleSystem _particleSystemFinishWork;
         [SerializeField] ControlGame _controlGame;
+        [SerializeField] animationStateController _animationStateController;
+
+        protected override void Start()
+        {
+            base.Start();
+
+            if (_animationStateController == null)
+                _animationStateController = FindObjectOfType<animationStateController>();
+        }
 
         public override WasteBase GetActualWasteFinishWork()
         {
@@ -20,6 +29,8 @@ namespace ProcessMachine
             SetCurrentWasteToNull();
 
             _viewProcessMachine.SetNormalState();
+
+            _animationStateController.SetPlayJumpBackFlip();
 
             return null;
         }
