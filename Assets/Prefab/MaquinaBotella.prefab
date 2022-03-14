@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6271849194639203000}
   - component: {fileID: 5687529327896929108}
-  - component: {fileID: 1468681841877347102}
-  - component: {fileID: 4315193485920122412}
   m_Layer: 0
   m_Name: MaquinaBotella
   m_TagString: Untagged
@@ -49,38 +47,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.71, y: 1.5, z: 0.82}
   m_Center: {x: 0, y: 0.75, z: 0}
---- !u!114 &1468681841877347102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2843044893562269532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ced85cb4ceb5f4db1a657f8a81ed04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectFirstState: {fileID: 0}
-  _objectWorking: {fileID: 0}
-  _objectFull: {fileID: 0}
---- !u!114 &4315193485920122412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2843044893562269532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1af332535ec5ff4ca4cb073aab058b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeToWork: 2
-  _trasnformSpawnObject: {fileID: 0}
-  _wasteTypesToDoProcess: 
-  _resultWasteType: 0
-  _factoryWaste: {fileID: 0}
 --- !u!1001 &3678493782232875428
 PrefabInstance:
   m_ObjectHideFlags: 0
