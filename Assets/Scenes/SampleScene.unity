@@ -555,14 +555,12 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 0
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 01
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -2176,6 +2174,14 @@ PrefabInstance:
       propertyPath: _animationStateController
       value: 
       objectReference: {fileID: 465123052}
+    - target: {fileID: 1957205217, guid: 101ca8c8b4c657c4ab0eb84f7de3147f, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957205217, guid: 101ca8c8b4c657c4ab0eb84f7de3147f, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7582467762694024779, guid: 101ca8c8b4c657c4ab0eb84f7de3147f, type: 3}
       propertyPath: m_Center.x
       value: 0.39
@@ -4317,6 +4323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1790599615}
+  - component: {fileID: 1790599616}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -4340,6 +4347,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1790599616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790599614}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710388ae32098e94ca7f9e2e3d6bc874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 185204550}
+  videoUrl: https://drive.google.com/file/d/1T1nRfpE41rprRrvt_cCYzi5JaxI8XO4z/view?usp=sharing
 --- !u!1001 &1793502175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6779,6 +6800,18 @@ PrefabInstance:
     - target: {fileID: 6947867476710864337, guid: 0ecd26eb46239af45835a7ceb9e951e8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947867476710864367, guid: 0ecd26eb46239af45835a7ceb9e951e8, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947867476710864367, guid: 0ecd26eb46239af45835a7ceb9e951e8, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947867476710864367, guid: 0ecd26eb46239af45835a7ceb9e951e8, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ecd26eb46239af45835a7ceb9e951e8, type: 3}
