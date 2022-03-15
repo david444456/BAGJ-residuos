@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 namespace ProcessMachine
 {
@@ -12,6 +13,7 @@ namespace ProcessMachine
         [SerializeField] PlayerMovement playerMovement;
 
         [Header("UI")]
+        [SerializeField] VideoPlayer videoPlayer;
         [SerializeField] GameObject _goFinishGame;
         [SerializeField] Text _textUIScore;
         [SerializeField] Text _textTime;
@@ -43,6 +45,18 @@ namespace ProcessMachine
                 if (_actualTime <= 0)
                     FinishGame();
             }
+        }
+
+        private bool oneChance = false;
+
+        public void SeeVideo()
+        {
+            if (oneChance) return;
+
+            oneChance = true;
+            _goFinishGame.SetActive(true);
+            videoPlayer.Play();
+            Destroy(_goFinishGame, 12);
         }
 
         private void FinishGame()
