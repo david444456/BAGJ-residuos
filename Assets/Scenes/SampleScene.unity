@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: _invokeEvent
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4230823969888032840, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4286503695777559236, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.8
@@ -262,6 +266,26 @@ PrefabInstance:
       propertyPath: GameObjectToSpawnCarry
       value: 
       objectReference: {fileID: 3701482512573648480, guid: 4a605f941dbf8ed4fa33699be67f85fd, type: 3}
+    - target: {fileID: 7540194898670284685, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540194899771402746, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540194899866965336, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540194900160349941, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540194900248562152, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: _invokeEvent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8723502158646972437, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
       propertyPath: _invokeEvent
       value: 1
