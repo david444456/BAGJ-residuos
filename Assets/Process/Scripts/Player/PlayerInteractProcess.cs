@@ -66,10 +66,12 @@ namespace ProcessMachine
                 SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
                 _currentWasteInteract.GrabObject();
             }
+            print("_playerInventory");
 
             if (_processMachine == null)
                 return;
 
+            print("Process");
             if (_playerInventory.CurrentObjectInventory != null && CallCompareObject())
                 SetCurrentWasteInInventory(null);
             else if (_processMachine.IsFinishWorking() && _playerInventory.CurrentObjectInventory == null)

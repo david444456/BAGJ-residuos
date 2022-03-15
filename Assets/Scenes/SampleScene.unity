@@ -490,10 +490,10 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -2373,7 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bef53365ccd8b44adcc1c90a3809e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limitTime: 5
+  limitTime: 130
   playerMovement: {fileID: 381194576}
   videoPlayer: {fileID: 185204550}
   _goFinishGame: {fileID: 1855457261}
