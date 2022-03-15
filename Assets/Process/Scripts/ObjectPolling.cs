@@ -51,6 +51,7 @@ namespace ProcessMachine
                     Instantiate(_gameObjectToSpawn, this.transform)
                     .GetComponent<WasteBase>();
 
+                print("Name: " + name + " " + (returnObject == null));
                 returnObject.SetActualObjectPolling(this);
 
                 _objectsWorking.Add(returnObject);
