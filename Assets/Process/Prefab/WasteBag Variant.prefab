@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3182735578864905814, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
       propertyPath: m_Name
-      value: WasteBag
+      value: WasteBag Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8873657238761125790, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
       propertyPath: m_Size.x
