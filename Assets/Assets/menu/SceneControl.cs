@@ -15,4 +15,9 @@ public class SceneControl : MonoBehaviour
     public void ExitGame() {
         Application.Quit();
     }
+
+    public void OpenLink()
+    {
+        Application.OpenURL("https://www.youtube.com/watch?v=bUIh2cOOSOQ");
+    }
 }

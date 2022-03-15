@@ -4323,7 +4323,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1790599615}
-  - component: {fileID: 1790599616}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -4347,20 +4346,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1790599616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790599614}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710388ae32098e94ca7f9e2e3d6bc874, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 185204550}
-  videoUrl: https://drive.google.com/file/d/1T1nRfpE41rprRrvt_cCYzi5JaxI8XO4z/view?usp=sharing
 --- !u!1001 &1793502175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6609,6 +6594,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1107117839}
         m_TargetAssemblyTypeName: ProcessMachine.ControlGame, Assembly-CSharp
         m_MethodName: SeeVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2009230173}
+        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_MethodName: OpenLink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
