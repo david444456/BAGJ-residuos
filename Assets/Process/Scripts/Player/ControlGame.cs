@@ -16,6 +16,7 @@ namespace ProcessMachine
         [SerializeField] Text _textUIScore;
         [SerializeField] Text _textTime;
 
+        public MenuFin MenuFin;
         private int _currentPunctuation = 0;
         private float _currentCountTime = 0;
         private float _actualTime;
@@ -46,12 +47,13 @@ namespace ProcessMachine
 
         private void FinishGame()
         {
-            print("Finish game!");
+            //print("Finish game!");
+            MenuFin.Setup(_currentPunctuation);
             playerMovement.enabled = false;
             playerMovement.GetComponent<PlayerInteractProcess>().enabled = false;
             playerMovement.GetComponentInChildren<animationStateController>().enabled = false;
 
-            _goFinishGame.SetActive(true);
+            //_goFinishGame.SetActive(true);
         }
 
         public void AugmentPuntuation(int points)
