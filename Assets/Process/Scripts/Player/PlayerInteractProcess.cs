@@ -60,8 +60,12 @@ namespace ProcessMachine
 
             if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf )
             {
+                print("before _playerInventory");
+
                 if (_playerInventory.CurrentObjectInventory != null)
                     return;
+
+                print("after _playerInventory");
 
                 SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
                 _currentWasteInteract.GrabObject();
