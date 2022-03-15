@@ -101,8 +101,10 @@ namespace ProcessMachine
             return isTheSameCount;
         }
 
+        public AudioSource workingSound;
         private void SetTimeToZero()
         {
+            workingSound.Play();
             print("Time to zero");
             _timeWorking = 0;
             _isWaitingByExitProduct = true;
@@ -111,8 +113,10 @@ namespace ProcessMachine
             //active ui
         }
 
+        public AudioSource finishSound;
         private void FinishWorkProcess()
         {
+            finishSound.Play();
             _currentWaste = _factoryWaste.GetNewObjectWaste(_resultWasteType, true) as CurrentWaste;
             _currentWaste.gameObject.SetActive(false);
             _isFinishWork = true;
