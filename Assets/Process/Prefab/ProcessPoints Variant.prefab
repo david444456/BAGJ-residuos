@@ -40,6 +40,28 @@ Transform:
   m_Father: {fileID: 5279509203302049464}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2127363172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279509203302049445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96212139dbac8c04185c3506aa73495e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToWork: 5
+  _trasnformSpawnObject: {fileID: 8196125460536926968}
+  _wasteTypesToDoProcess: 05000000
+  _resultWasteType: 5
+  _factoryWaste: {fileID: 0}
+  workingSound: {fileID: 5183920074743033277}
+  finishSound: {fileID: 2300633998290856719}
+  _particleSystemFinishWork: {fileID: 6947867476710864367}
+  _controlGame: {fileID: 0}
+  _animationStateController: {fileID: 0}
 --- !u!65 &8056048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66,26 +88,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3999999, y: 2.4, z: 4.7999997}
   m_Center: {x: -0.0000019073486, y: 1.2, z: 0}
---- !u!114 &2127363172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5279509203302049445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96212139dbac8c04185c3506aa73495e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeToWork: 2
-  _trasnformSpawnObject: {fileID: 8196125460536926968}
-  _wasteTypesToDoProcess: 05000000
-  _resultWasteType: 5
-  _factoryWaste: {fileID: 0}
-  _particleSystemFinishWork: {fileID: 6947867476710864367}
-  _controlGame: {fileID: 0}
-  _animationStateController: {fileID: 0}
 --- !u!1001 &175025586896462000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,6 +983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2531405760354365600, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ef69e30adcc93745bbfd2d366b001ca, type: 3}
     - target: {fileID: 3040957994980524725, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.53
@@ -1041,16 +1047,34 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 2.32
       objectReference: {fileID: 0}
+    - target: {fileID: 8880211818787616274, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: Mute
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880211818787616274, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
---- !u!4 &5279509203302049464 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3284586834568870821, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
-  m_PrefabInstance: {fileID: 7264772354018876701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8196125460536926968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1544694374095994853, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+  m_PrefabInstance: {fileID: 7264772354018876701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5183920074743033277 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2531405760354365600, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+  m_PrefabInstance: {fileID: 7264772354018876701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2300633998290856719 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8880211818787616274, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+  m_PrefabInstance: {fileID: 7264772354018876701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5279509203302049464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3284586834568870821, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
   m_PrefabInstance: {fileID: 7264772354018876701}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5279509203302049445 stripped
