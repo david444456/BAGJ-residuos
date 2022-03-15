@@ -7,6 +7,8 @@ namespace ProcessMachine
 {
     public class WasteInteract : MonoBehaviour
     {
+        public bool _invokeEvent = false; 
+        public Action DesactiveObject = delegate { };
         public WasteBase CurrentWaste;
 
         private void OnEnable()
@@ -32,6 +34,9 @@ namespace ProcessMachine
 
         public void GrabObject()
         {
+            if(_invokeEvent) 
+                DesactiveObject.Invoke();
+
             CurrentWaste.ReturnThisObjectToThePool();
         }
 

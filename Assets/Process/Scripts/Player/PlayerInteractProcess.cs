@@ -26,8 +26,15 @@ namespace ProcessMachine
                _processMachine = other.gameObject.GetComponent<IProcessMachine>();
 
             if (IsTheSameTag(other, "Waste"))
+            {
                 _currentWasteInteract = other.gameObject.GetComponent<WasteInteract>();
+                _currentWasteInteract.DesactiveObject += DesactiveObjectWasteInteract;
+            }
+        }
 
+        private void DesactiveObjectWasteInteract()
+        {
+            _currentWasteInteract = null;
         }
 
         private bool IsTheSameTag(Collider other, string tagString) => other.tag == tagString;
@@ -38,7 +45,10 @@ namespace ProcessMachine
                 _processMachine = null;
 
             if (IsTheSameTag(other, "Waste"))
+            {
+                _currentWasteInteract.DesactiveObject -= DesactiveObjectWasteInteract;
                 _currentWasteInteract = null;
+            }
 
             print("Exit");
         }
