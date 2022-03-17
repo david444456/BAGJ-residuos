@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace ProcessMachine
@@ -13,8 +11,6 @@ namespace ProcessMachine
 
         PlayerInventory _playerInventory;
 
-        
-
         private void Start()
         {
             _playerInventory = GetComponent<PlayerInventory>();
@@ -23,7 +19,9 @@ namespace ProcessMachine
         private void OnTriggerEnter(Collider other)
         {
             if (IsTheSameTag(other, _tagProcessMachine))
-               _processMachine = other.gameObject.GetComponent<IProcessMachine>();
+            {
+                _processMachine = other.gameObject.GetComponent<IProcessMachine>();
+            }
 
             if (IsTheSameTag(other, "Waste"))
             {
@@ -49,8 +47,6 @@ namespace ProcessMachine
                 _currentWasteInteract.DesactiveObject -= DesactiveObjectWasteInteract;
                 _currentWasteInteract = null;
             }
-
-            print("Exit");
         }
 
         private void Update()
@@ -58,28 +54,31 @@ namespace ProcessMachine
             if (!Input.GetKeyDown(KeyCode.E))
                 return;
 
-            if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf )
-            {
-                print("before _playerInventory");
-
-                if (_playerInventory.CurrentObjectInventory != null)
-                    return;
-
-                print("after _playerInventory");
-
-                SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
-                _currentWasteInteract.GrabObject();
-            }
-            print("_playerInventory");
+            if (IsInteractWasteAndSetWasteInventory())
+                return;
 
             if (_processMachine == null)
                 return;
 
-            print("Process");
+            print(_processMachine + " " + _playerInventory.CurrentObjectInventory);
             if (_playerInventory.CurrentObjectInventory != null && CallCompareObject())
                 SetCurrentWasteInInventory(null);
             else if (_processMachine.IsFinishWorking() && _playerInventory.CurrentObjectInventory == null)
                 SetCurrentWasteInInventory(_processMachine.GetActualWasteFinishWork());
+        }
+
+        private bool IsInteractWasteAndSetWasteInventory()
+        {
+            if (_currentWasteInteract != null && _currentWasteInteract.gameObject.activeSelf)
+            {
+                if (_playerInventory.CurrentObjectInventory != null)
+                    return false;
+
+                SetCurrentWasteInInventory(_currentWasteInteract.CurrentWaste);
+                _currentWasteInteract.GrabObject();
+                return true;
+            }
+            return false;
         }
 
         private void SetCurrentWasteInInventory(WasteBase newWasteBase)
