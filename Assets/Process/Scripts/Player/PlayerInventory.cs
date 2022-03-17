@@ -1,3 +1,4 @@
+using Character;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,7 @@ namespace ProcessMachine
             else
                 DestroyAllObjectsInTransformSpawnPlayer();
 
-            GetComponentInChildren<animationStateController>().SetCarryHasValue(_currentObjectInventory!=null);
+            GetComponentInChildren<CharacterAnimation>().SetCarryHasValue(_currentObjectInventory!=null);
         }
 
         private void InstanceAndDeleteObjectsInPlayer()

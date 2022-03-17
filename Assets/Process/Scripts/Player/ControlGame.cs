@@ -1,3 +1,4 @@
+using Character;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,7 +66,7 @@ namespace ProcessMachine
             MenuFin.Setup(_currentPunctuation);
             playerMovement.enabled = false;
             playerMovement.GetComponent<PlayerInteractProcess>().enabled = false;
-            playerMovement.GetComponentInChildren<animationStateController>().enabled = false;
+            playerMovement.GetComponentInChildren<CharacterAnimation>().enabled = false;
 
             //_goFinishGame.SetActive(true);
         }

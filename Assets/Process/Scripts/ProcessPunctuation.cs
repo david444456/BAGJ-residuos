@@ -1,3 +1,4 @@
+using Character;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,14 +9,14 @@ namespace ProcessMachine
     {
         [SerializeField] ParticleSystem _particleSystemFinishWork;
         [SerializeField] ControlGame _controlGame;
-        [SerializeField] animationStateController _animationStateController;
+        [SerializeField] CharacterAnimation _animationStateController;
 
         protected override void Start()
         {
             base.Start();
 
             if (_animationStateController == null)
-                _animationStateController = FindObjectOfType<animationStateController>();
+                _animationStateController = FindObjectOfType<CharacterAnimation>();
         }
 
         public override WasteBase GetActualWasteFinishWork()
