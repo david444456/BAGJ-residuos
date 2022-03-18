@@ -2369,6 +2369,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &998376075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1549540374, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
+  m_PrefabInstance: {fileID: 2058139365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389e0d6c2a681d341b12ceb6e2d29e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101381600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitTime: 130
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 998376075}
   videoPlayer: {fileID: 185204550}
   _goFinishGame: {fileID: 1855457261}
   _textUIScore: {fileID: 688978862}

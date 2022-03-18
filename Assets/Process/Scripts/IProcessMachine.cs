@@ -3,7 +3,7 @@
     public interface IProcessMachine
     {
         public bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase);
-        public WasteBase GetActualWasteFinishWork();
+        public WasteBase GetActualWasteFinishWorkAndFinishProcess();
 
         public bool IsFinishWorking();
     }

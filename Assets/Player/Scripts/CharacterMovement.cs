@@ -124,6 +124,7 @@ namespace Character
             _currentMove.z = _inputMove.y;
 
             //_currentMove = new Vector3(_currentMove.x, GetGravityDown(), 0);
+            _currentMove = _currentMove.normalized;
             return _currentMove;
         }
 

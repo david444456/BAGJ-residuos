@@ -46,7 +46,7 @@ namespace ProcessMachine
             return WaitingAndTimeWorkingBiggerThanTimeToWork() && _currentWaste != null;
         }
 
-        public virtual WasteBase GetActualWasteFinishWork()
+        public virtual WasteBase GetActualWasteFinishWorkAndFinishProcess()
         {
             if (_currentWaste == null)
                 throw new Exception("This is not the correct way to call this method");
@@ -56,8 +56,8 @@ namespace ProcessMachine
             _currentWaste.transform.position = _trasnformSpawnObject.position;
 
             CurrentWaste newWaste = _currentWaste;
-            SetCurrentWasteToNull();
 
+            SetCurrentWasteToNull();
             _viewProcessMachine.SetNormalState();
 
             return newWaste;

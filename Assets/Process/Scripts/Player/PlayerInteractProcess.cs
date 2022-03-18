@@ -64,7 +64,7 @@ namespace ProcessMachine
             if (_playerInventory.CurrentObjectInventory != null && CallCompareObject())
                 SetCurrentWasteInInventory(null);
             else if (_processMachine.IsFinishWorking() && _playerInventory.CurrentObjectInventory == null)
-                SetCurrentWasteInInventory(_processMachine.GetActualWasteFinishWork());
+                SetCurrentWasteInInventory(_processMachine.GetActualWasteFinishWorkAndFinishProcess());
         }
 
         private bool IsInteractWasteAndSetWasteInventory()

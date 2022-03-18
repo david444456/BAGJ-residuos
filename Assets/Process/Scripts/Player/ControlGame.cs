@@ -11,7 +11,7 @@ namespace ProcessMachine
     {
         [Header("Parameters")]
         [SerializeField] int limitTime = 130;
-        [SerializeField] PlayerMovement playerMovement;
+        [SerializeField] CharacterMovement playerMovement;
 
         [Header("UI")]
         [SerializeField] VideoPlayer videoPlayer;
@@ -30,7 +30,6 @@ namespace ProcessMachine
 
             _textUIScore.text = _currentPunctuation.ToString();
             _textTime.text = _actualTime.ToString();
-
         }
 
         private void Update()
@@ -56,27 +55,29 @@ namespace ProcessMachine
 
             oneChance = true;
             _goFinishGame.SetActive(true);
+
             videoPlayer.Play();
             Destroy(_goFinishGame, 12);
         }
 
         private void FinishGame()
         {
-            //print("Finish game!");
             MenuFin.Setup(_currentPunctuation);
+
+            DesactiveControlPlayer();
+        }
+
+        private void DesactiveControlPlayer()
+        {
             playerMovement.enabled = false;
             playerMovement.GetComponent<PlayerInteractProcess>().enabled = false;
             playerMovement.GetComponentInChildren<CharacterAnimation>().enabled = false;
-
-            //_goFinishGame.SetActive(true);
         }
 
         public void AugmentPuntuation(int points)
         {
             _currentPunctuation += points;
             _textUIScore.text = _currentPunctuation.ToString();
-            print(_currentPunctuation);
-            //ui
         }
     }
 }

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprintSpeed: 4
   _walkSpeed: 2
-  _rotationFactorPerFrame: 13
+  _rotationFactorPerFrame: 25
   _gravity: -9.8
   _groundedGravity: -0.05
   _maxJumpHeight: 1

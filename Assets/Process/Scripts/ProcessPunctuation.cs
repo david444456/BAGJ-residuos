@@ -19,7 +19,7 @@ namespace ProcessMachine
                 _animationStateController = FindObjectOfType<CharacterAnimation>();
         }
 
-        public override WasteBase GetActualWasteFinishWork()
+        public override WasteBase GetActualWasteFinishWorkAndFinishProcess()
         {
             _particleSystemFinishWork.Play();
 

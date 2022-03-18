@@ -9,12 +9,18 @@ namespace ProcessMachine
     {
         [SerializeField] private Transform _transformSpawnObject;
 
+        private CharacterAnimation _characterAnimation;
         private WasteBase _currentObjectInventory;
 
         public WasteBase CurrentObjectInventory
         {
             get => _currentObjectInventory;
             set => SetCurrentObjectInventory(value);
+        }
+
+        private void Start()
+        {
+            _characterAnimation = GetComponentInChildren<CharacterAnimation>();
         }
 
         private void SetCurrentObjectInventory(WasteBase wasteBase)
@@ -26,7 +32,7 @@ namespace ProcessMachine
             else
                 DestroyAllObjectsInTransformSpawnPlayer();
 
-            GetComponentInChildren<CharacterAnimation>().SetCarryHasValue(_currentObjectInventory!=null);
+            _characterAnimation.SetCarryHasValue(_currentObjectInventory!=null);
         }
 
         private void InstanceAndDeleteObjectsInPlayer()
@@ -51,6 +57,5 @@ namespace ProcessMachine
         {
             print(_currentObjectInventory != null);
         }
-
     }
 }
