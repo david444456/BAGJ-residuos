@@ -7,9 +7,18 @@ namespace ProcessMachine
 {
     public class PlayerInventory : MonoBehaviour
     {
-        [SerializeField] private Transform _transformSpawnObject;
+        [Header("Configure")]
+        [SerializeField] private float _forceToPushObject = 2;
 
+        [Header("References")]
+        [SerializeField] private Transform _transformSpawnObject;
+        [SerializeField] private Transform _transformSpawnPushObject;
+
+        private CharacterInput _characterInput;
         private CharacterAnimation _characterAnimation;
+        private FactoryWaste _factoryWaste;
+
+
         private WasteBase _currentObjectInventory;
 
         public WasteBase CurrentObjectInventory
@@ -20,7 +29,10 @@ namespace ProcessMachine
 
         private void Start()
         {
+            _characterInput = GetComponent<CharacterInput>();
             _characterAnimation = GetComponentInChildren<CharacterAnimation>();
+
+            _factoryWaste = FindObjectOfType<FactoryWaste>();
         }
 
         private void SetCurrentObjectInventory(WasteBase wasteBase)
@@ -56,6 +68,32 @@ namespace ProcessMachine
         private void Update()
         {
             //print(_currentObjectInventory != null);
+            print(_characterInput.PushItemPress);
+            if (_characterInput.PushItemPress && _currentObjectInventory != null)
+                CreateAndPushObject();
+        }
+
+        private void CreateAndPushObject()
+        {
+            DestroyAllObjectsInTransformSpawnPlayer();
+            RequestObjectAndPush();
+            LostCurrentObject();
+        }
+
+        private void RequestObjectAndPush()
+        {
+            WasteBase wasteBase = _factoryWaste.GetNewObjectWaste(_currentObjectInventory.CurrentWasteType, true);
+
+            wasteBase.gameObject.SetActive(true);
+            wasteBase.transform.position = _transformSpawnPushObject.position;
+
+            wasteBase.GetComponent<ControlVelocityObject>().AddForce(transform.forward * _forceToPushObject);
+        }
+
+        private void LostCurrentObject()
+        {
+            _currentObjectInventory = null;
+            _characterAnimation.SetCarryHasValue(_currentObjectInventory != null);
         }
     }
 }

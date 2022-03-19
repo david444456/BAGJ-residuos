@@ -25,7 +25,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1970485a428a0994b9ec2ae8c2318627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wasteTypeToDoProcess: 5
+  _wasteTypeToDoProcess: 6
   GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 852e0f64dcd304246875dd4ac0ef5ee9, type: 3}
   _pointsToAdd: 10
 --- !u!1001 &5914001138415810767
@@ -86,6 +86,10 @@ PrefabInstance:
     - target: {fileID: 1122119604483456111, guid: 0a32dbb0cf3882a40817becf1d674a00, type: 3}
       propertyPath: m_Name
       value: GlassClearObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937123789064943818, guid: 0a32dbb0cf3882a40817becf1d674a00, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a32dbb0cf3882a40817becf1d674a00, type: 3}

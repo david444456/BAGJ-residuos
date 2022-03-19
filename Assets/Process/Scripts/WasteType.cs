@@ -7,6 +7,7 @@
         Glass,
         Paper,
         Organic,
+        Bag,
         Clean
     }
 }

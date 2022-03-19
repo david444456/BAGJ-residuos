@@ -83,6 +83,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1740007660, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
+      propertyPath: _wasteTypeToDoProcess
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740007660, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
       propertyPath: GameObjectToSpawnCarry
       value: 
       objectReference: {fileID: 3701482512573648480, guid: 4a605f941dbf8ed4fa33699be67f85fd, type: 3}

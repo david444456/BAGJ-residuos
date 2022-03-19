@@ -4829,7 +4829,7 @@ MonoBehaviour:
   _timeToWork: 6
   _trasnformSpawnObject: {fileID: 4984638922230293755}
   _wasteTypesToDoProcess: 02000000
-  _resultWasteType: 5
+  _resultWasteType: 6
   _factoryWaste: {fileID: 0}
   workingSound: {fileID: 3134501425629490444}
   finishSound: {fileID: 8314341768218471358}

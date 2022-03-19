@@ -328,7 +328,7 @@ MonoBehaviour:
   - {fileID: 4286503697848512434}
   - {fileID: 4286503696401073524}
   - {fileID: 4286503697864125403}
-  typeSpawn: 0200000003000000
+  typeSpawn: 020000000300000005000000
   factoryWaste: {fileID: 0}
 --- !u!1 &4286503697210509853
 GameObject:

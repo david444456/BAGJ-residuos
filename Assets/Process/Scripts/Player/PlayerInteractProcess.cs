@@ -45,7 +45,7 @@ namespace ProcessMachine
             if (IsTheSameTag(other, _tagProcessMachine))
                 _processMachine = null;
 
-            if (IsTheSameTag(other, "Waste"))
+            if (IsTheSameTag(other, "Waste") && _currentWasteInteract != null)
             {
                 _currentWasteInteract.DesactiveObject -= DesactiveObjectWasteInteract;
                 _currentWasteInteract = null;

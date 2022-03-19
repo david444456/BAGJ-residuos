@@ -622,7 +622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWork: 5
   _trasnformSpawnObject: {fileID: 0}
-  _wasteTypesToDoProcess: 03000000
+  _wasteTypesToDoProcess: 0300000005000000
   _resultWasteType: 5
   _factoryWaste: {fileID: 0}
   workingSound: {fileID: 8314341768218471358}
