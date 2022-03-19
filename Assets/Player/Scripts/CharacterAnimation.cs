@@ -20,6 +20,11 @@ namespace Character
             isCarryingHash = Animator.StringToHash("isCarrying");
         }
 
+        public void UpdateMove(float forward)
+        {
+            _animator.SetFloat(_forwardSpeedParamId, forward, 0.1f, Time.deltaTime);
+        }
+
         public void UpdateAnimation(bool _walk, bool sprint)
         {
             if (_walk && sprint)

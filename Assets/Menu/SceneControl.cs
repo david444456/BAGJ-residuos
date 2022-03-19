@@ -12,6 +12,11 @@ public class SceneControl : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
+    public void LoadSceneByIndex(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
     public void ExitGame() {
         Application.Quit();
     }

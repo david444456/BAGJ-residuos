@@ -25,7 +25,7 @@ namespace Character
 
         internal Vector2 GetMovementInput() => _moveDirection;
 
-        private void Update()
+        private void FixedUpdate()
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");

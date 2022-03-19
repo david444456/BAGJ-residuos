@@ -60,7 +60,6 @@ namespace ProcessMachine
             if (_processMachine == null)
                 return;
 
-            print(_processMachine + " " + _playerInventory.CurrentObjectInventory);
             if (_playerInventory.CurrentObjectInventory != null && CallCompareObject())
                 SetCurrentWasteInInventory(null);
             else if (_processMachine.IsFinishWorking() && _playerInventory.CurrentObjectInventory == null)

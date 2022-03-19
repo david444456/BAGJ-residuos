@@ -6,6 +6,8 @@ namespace Character
 {
     public class CharacterMovement : MonoBehaviour
     {
+        [SerializeField] private float _velocityChangeValue = .015f;
+
         [Header("Walk")]
         [SerializeField] private float _sprintSpeed = 5;
         [SerializeField] private float _walkSpeed = 2;
@@ -33,7 +35,6 @@ namespace Character
         private Vector3 _currentMove;
         private bool _walkInput;
 
-
         void Awake()
         {
             _characterController = GetComponent<CharacterController>();
@@ -52,6 +53,7 @@ namespace Character
 
         void Update()
         {
+            UpdateVelocity();
             HandleRotation();
             Move();
             HandleGravity();
@@ -61,6 +63,21 @@ namespace Character
         private void LateUpdate()
         {
             AnimationSetup();
+        }
+
+        private float _velocitySpeed;
+        private float _targetSpeed;
+
+        private void UpdateVelocity()
+        {
+            if (Mathf.Approximately(_velocitySpeed, _targetSpeed))
+                return;
+
+            if(_velocitySpeed < _targetSpeed)
+                _velocitySpeed += _velocityChangeValue * Time.deltaTime * (_targetSpeed - _velocitySpeed);
+            else if(_velocitySpeed > _targetSpeed)
+                _velocitySpeed -= _velocityChangeValue * Time.deltaTime * 2;
+
         }
 
         private void HandleJump()
@@ -107,10 +124,19 @@ namespace Character
 
         private void Move()
         {
-            _characterController.Move(GetMovementVector() * GetSpeed() * Time.deltaTime );
+            _characterController.Move(GetMovementVector() * _velocitySpeed * Time.deltaTime);//GetSpeed() * Time.deltaTime );
 
-            _walkInput = _inputMove.x != 0 || _inputMove.y != 0;
+            _walkInput = _inputMove.x != 0 || _inputMove.y != 0 && GetThereAreInput();
+            if (_walkInput)
+                _targetSpeed = _characterInput.SprintButtonPress ? _sprintSpeed : _walkSpeed;
+            else
+            {
+                _targetSpeed = 0;
+                _velocitySpeed = 0;
+            }
         }
+
+        private bool GetThereAreInput() => Mathf.Abs(_inputMove.y) + Mathf.Abs(_inputMove.x) >= 1;
 
         private float GetSpeed() {
             return _characterInput.SprintButtonPress ? _sprintSpeed : _walkSpeed;
@@ -130,7 +156,8 @@ namespace Character
 
         private void AnimationSetup() 
         {
-            _characterAnimation.UpdateAnimation(_walkInput, _characterInput.SprintButtonPress);
+            //_characterAnimation.UpdateAnimation(_walkInput, _characterInput.SprintButtonPress);
+            _characterAnimation.UpdateMove(_velocitySpeed);
         }
     }
 }

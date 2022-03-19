@@ -55,7 +55,7 @@ namespace ProcessMachine
 
         private void Update()
         {
-            print(_currentObjectInventory != null);
+            //print(_currentObjectInventory != null);
         }
     }
 }
