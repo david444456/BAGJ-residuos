@@ -126,7 +126,7 @@ namespace Character
         {
             _characterController.Move(GetMovementVector() * _velocitySpeed * Time.deltaTime);//GetSpeed() * Time.deltaTime );
 
-            _walkInput = _inputMove.x != 0 || _inputMove.y != 0 && GetThereAreInput();
+            _walkInput = _inputMove.x != 0 || _inputMove.y != 0;
             if (_walkInput)
                 _targetSpeed = _characterInput.SprintButtonPress ? _sprintSpeed : _walkSpeed;
             else

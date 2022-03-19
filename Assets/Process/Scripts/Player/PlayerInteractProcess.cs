@@ -1,3 +1,4 @@
+using Character;
 using UnityEngine;
 
 namespace ProcessMachine
@@ -6,14 +7,16 @@ namespace ProcessMachine
     {
         [SerializeField] private string _tagProcessMachine;
 
-        IProcessMachine _processMachine;
-        WasteInteract _currentWasteInteract;
+        private IProcessMachine _processMachine;
+        private WasteInteract _currentWasteInteract;
 
-        PlayerInventory _playerInventory;
+        private PlayerInventory _playerInventory;
+        private CharacterInput _characterInput;
 
         private void Start()
         {
             _playerInventory = GetComponent<PlayerInventory>();
+            _characterInput = GetComponent<CharacterInput>();
         }
 
         private void OnTriggerEnter(Collider other)
@@ -51,7 +54,7 @@ namespace ProcessMachine
 
         private void Update()
         {
-            if (!Input.GetKeyDown(KeyCode.E))
+            if (!_characterInput.HoldItemPress)
                 return;
 
             if (IsInteractWasteAndSetWasteInventory())

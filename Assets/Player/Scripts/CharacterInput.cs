@@ -8,10 +8,13 @@ namespace Character
 	public class CharacterInput : MonoBehaviour
 	{
         protected bool _sprintButtonPressed;
+        protected bool _isHoldItemPress;
         protected bool _jumpButtonPressed;
 
         protected Vector2 _lookInput;
         private Vector2 _moveDirection;
+
+        public bool HoldItemPress => _isHoldItemPress;
 
         public bool SprintButtonPress => _sprintButtonPressed;
 
@@ -27,8 +30,19 @@ namespace Character
 
         private void FixedUpdate()
         {
+            MoveInput();
+        }
+
+        private void Update()
+        {
+            _isHoldItemPress = Input.GetKeyDown(KeyCode.E);
+        }
+
+        private void MoveInput()
+        {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
+
             _sprintButtonPressed = Input.GetKey("left shift");
 
             _moveDirection = new Vector2(horizontal, vertical);
