@@ -101,29 +101,23 @@ namespace ProcessMachine
             return isTheSameCount;
         }
 
-        public AudioSource workingSound;
         private void SetTimeToZero()
         {
-            workingSound.Play();
-            print("Time to zero");
             _timeWorking = 0;
             _isWaitingByExitProduct = true;
-            _viewProcessMachine.SetWorkingState();
 
-            //active ui
+            _viewProcessMachine.SetWorkingState();
+            _viewProcessMachine.PlayWorkingSound();
         }
 
-        public AudioSource finishSound;
         private void FinishWorkProcess()
         {
-            finishSound.Play();
             _currentWaste = _factoryWaste.GetNewObjectWaste(_resultWasteType, true) as CurrentWaste;
             _currentWaste.gameObject.SetActive(false);
             _isFinishWork = true;
 
             _viewProcessMachine.SetFinishState();
-            //active object to show finish object
-            //desactive ui
+            _viewProcessMachine.PlayFinishSound();
         }
     }
 }

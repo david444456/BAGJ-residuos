@@ -11,6 +11,20 @@ namespace ProcessMachine
         [SerializeField] private GameObject _objectWorking;
         [SerializeField] private GameObject _objectFull;
 
+        [Header("Sounds")]
+        [SerializeField] private AudioSource _workingSound;
+        [SerializeField] private AudioSource _finishSound;
+
+        public void PlayWorkingSound()
+        {
+            _workingSound.Play();
+        }
+
+        public void PlayFinishSound()
+        {
+            _finishSound.Play();
+        }
+
         public void SetNormalState()
         {
             SetActiveObject(_objectFirstState, true);

@@ -7,6 +7,7 @@ namespace ProcessMachine
 {
     public class ProcessPunctuation : ProcessMachineBase<WastePoints>
     {
+        [Header("Process punctuation")]
         [SerializeField] ParticleSystem _particleSystemFinishWork;
         [SerializeField] ControlGame _controlGame;
         [SerializeField] CharacterAnimation _animationStateController;
@@ -30,7 +31,6 @@ namespace ProcessMachine
             SetCurrentWasteToNull();
 
             _viewProcessMachine.SetNormalState();
-
             _animationStateController.SetPlayJumpBackFlip();
 
             return null;

@@ -67,8 +67,6 @@ namespace ProcessMachine
 
         private void Update()
         {
-            //print(_currentObjectInventory != null);
-            print(_characterInput.PushItemPress);
             if (_characterInput.PushItemPress && _currentObjectInventory != null)
                 CreateAndPushObject();
         }
