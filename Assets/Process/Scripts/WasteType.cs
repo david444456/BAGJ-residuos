@@ -8,6 +8,9 @@
         Paper,
         Organic,
         Bag,
-        Clean
+        Clean,
+        HotDog,
+        ChineseFood,
+        Compost
     }
 }

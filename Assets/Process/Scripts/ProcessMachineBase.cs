@@ -76,13 +76,18 @@ namespace ProcessMachine
 
         public virtual bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase)
         {
-            if (!_isWaitingByExitProduct && IsTheSameWasteType(wasteObjectsBase))
+            if (CanStartWorkingProcess(wasteObjectsBase))
             {
-                SetTimeToZero();
+                SetTimeToZeroStartWorking();
                 return true;
             }
 
             return false;
+        }
+
+        protected bool CanStartWorkingProcess(WasteBase[] wasteObjectsBase)
+        {
+            return !_isWaitingByExitProduct && IsTheSameWasteType(wasteObjectsBase);
         }
 
         protected bool IsTheSameWasteType(WasteBase[] wasteObjectsBase)
@@ -101,7 +106,7 @@ namespace ProcessMachine
             return isTheSameCount;
         }
 
-        private void SetTimeToZero()
+        private void SetTimeToZeroStartWorking()
         {
             _timeWorking = 0;
             _isWaitingByExitProduct = true;

@@ -1,81 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &1171540839879936072
+--- !u!65 &2811419976443243430
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7293396957235558417}
+  m_GameObject: {fileID: 6329093093926615490}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1411016, y: 0.11430434, z: 0.39255613}
-  m_Center: {x: -0.000000022351742, y: 0.05715217, z: 0.000000052154064}
---- !u!1001 &2390116013595401541
+  m_Size: {x: 0.38173857, y: 0.38250673, z: 0.08000015}
+  m_Center: {x: 0, y: -0.0000003054738, z: 0}
+--- !u!1001 &6303302441677751970
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7684768473635226579}
+    m_TransformParent: {fileID: 8243352232027978797}
     m_Modifications:
-    - target: {fileID: 4907863914330662228, guid: b9685935097a3e74ba2013a332c98489, type: 3}
-      propertyPath: m_Name
-      value: HotDog
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9296001
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.3685697
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 43.255
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4907863914330869744, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+    - target: {fileID: 45108148132557916, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 48590229515386720, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
+      propertyPath: m_Name
+      value: FoodTomato
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9685935097a3e74ba2013a332c98489, type: 3}
---- !u!1 &7293396957235558417 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
+--- !u!1 &6329093093926615490 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4907863914330662228, guid: b9685935097a3e74ba2013a332c98489, type: 3}
-  m_PrefabInstance: {fileID: 2390116013595401541}
+  m_CorrespondingSourceObject: {fileID: 48590229515386720, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
+  m_PrefabInstance: {fileID: 6303302441677751970}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7499287399195726051
+--- !u!1001 &8129383462576238365
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -88,15 +88,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195653825329746736, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.57
       objectReference: {fileID: 0}
     - target: {fileID: 195653825329746736, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 195653825329746736, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 195653825329746736, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -128,16 +128,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195653825329746738, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: m_Name
-      value: WasteOrganicHotDog Variant
+      value: WasteOrganicTomato Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5387616160470680081, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: GameObjectToSpawnCarry
       value: 
-      objectReference: {fileID: 4907863914330662228, guid: b9685935097a3e74ba2013a332c98489, type: 3}
+      objectReference: {fileID: 48590229515386720, guid: b9d4b9ce6adfaaf45b1a13f67ae13acf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
---- !u!4 &7684768473635226579 stripped
+--- !u!4 &8243352232027978797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 195653825329746736, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
-  m_PrefabInstance: {fileID: 7499287399195726051}
+  m_PrefabInstance: {fileID: 8129383462576238365}
   m_PrefabAsset: {fileID: 0}
