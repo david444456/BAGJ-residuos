@@ -4652,25 +4652,25 @@ MonoBehaviour:
   _startMenu: {fileID: 384572542}
   _data: {fileID: 11400000, guid: 63d69642128d44348a834aa324488ee3, type: 2}
   _infoSkins:
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 9f29010aa467e424a943ea86bc20982c, type: 3}
     _nameSkin: Oficinista.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: fbbd351d69d12794c883e541a3bab7c6, type: 3}
     _nameSkin: Jefe de negocios.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 3e2a706ae32c99440a3a50a51f85a6a8, type: 3}
     _nameSkin: Jefa de negocios.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: e3a83bbcff3ecd6479e065a021711b9d, type: 3}
     _nameSkin: Dia de lluvia.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 62aee64304839a944971958ac32b79f9, type: 3}
     _nameSkin: Casual
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 74388c1520fc29341bbb974c39197001, type: 3}
     _nameSkin: Policia
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 34dbd20790d3e9d44a055e7024b8386d, type: 3}
     _nameSkin: Casual hombre
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 639c0e800ef2cc84980a9004cd752422, type: 3}
     _nameSkin: Policia en cubierto.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 7b343ea8681763a45865e773e147be4d, type: 3}
     _nameSkin: Jefe de policia.
-  - _spriteImagesSkin: {fileID: 21300000, guid: 35b2fa319a60c634fae2be26261abfe7, type: 3}
+  - _spriteImagesSkin: {fileID: 21300000, guid: 9f29010aa467e424a943ea86bc20982c, type: 3}
     _nameSkin: Gendarme
 --- !u!1 &1591127841
 GameObject:
