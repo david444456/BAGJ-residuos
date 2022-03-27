@@ -293,8 +293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToWork: 5
-  _trasnformSpawnObject: {fileID: 0}
-  _wasteTypesToDoProcess: 0300000005000000
+  _trasnformSpawnObject: {fileID: 4984638922230293755}
+  _wasteTypesToDoProcess: 030000000500000007000000
   _resultWasteType: 5
   _factoryWaste: {fileID: 0}
   _particleSystemFinishWork: {fileID: 1957205217}
@@ -605,6 +605,11 @@ Transform:
 --- !u!4 &9067460993032418475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3284586833890914229, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+  m_PrefabInstance: {fileID: 5783508033352391454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4984638922230293755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1544694374095994853, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
   m_PrefabInstance: {fileID: 5783508033352391454}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6375179300581783179

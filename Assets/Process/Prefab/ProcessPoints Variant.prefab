@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWork: 5
   _trasnformSpawnObject: {fileID: 8196125460536926968}
-  _wasteTypesToDoProcess: 06000000
+  _wasteTypesToDoProcess: 0600000003000000
   _resultWasteType: 6
   _factoryWaste: {fileID: 0}
   _particleSystemFinishWork: {fileID: 6947867476710864367}
@@ -719,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413959748423769, guid: 7a1fea9863387904e9d54bcd1ec360e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9048789
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8413959748423769, guid: 7a1fea9863387904e9d54bcd1ec360e5, type: 3}
       propertyPath: m_LocalPosition.y

@@ -20,6 +20,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6991307288131067058, guid: f35b0098db8bcc64a88c7230a595f1bb, type: 3}
+      propertyPath: GameObjectToSpawnCarry
+      value: 
+      objectReference: {fileID: 2855558876837942407, guid: 58dcb9d11c057fb4cbae95e22cb6ac66, type: 3}
+    - target: {fileID: 1129387201862795740, guid: f35b0098db8bcc64a88c7230a595f1bb, type: 3}
+      propertyPath: m_Size.x
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129387201862795740, guid: f35b0098db8bcc64a88c7230a595f1bb, type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6386854921202096148, guid: f35b0098db8bcc64a88c7230a595f1bb, type: 3}
       propertyPath: m_Name
       value: WastePaperBox Variant
