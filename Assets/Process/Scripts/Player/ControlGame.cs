@@ -26,6 +26,7 @@ namespace ProcessMachine
 
         private void Start()
         {
+            Time.timeScale = 0;
             _actualTime = limitTime;
 
             _textUIScore.text = _currentPunctuation.ToString();
@@ -48,6 +49,11 @@ namespace ProcessMachine
         }
 
         private bool oneChance = false;
+
+        public void SetTimeToNormal()
+        {
+            Time.timeScale = 1;
+        }
 
         public void SeeVideo()
         {
