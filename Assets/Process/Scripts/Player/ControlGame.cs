@@ -11,6 +11,7 @@ namespace ProcessMachine
     {
         [Header("Parameters")]
         [SerializeField] int limitTime = 130;
+        [SerializeField] private bool _setTimeToZero = true;
         [SerializeField] CharacterMovement playerMovement;
 
         [Header("UI")]
@@ -26,7 +27,9 @@ namespace ProcessMachine
 
         private void Start()
         {
-            Time.timeScale = 0;
+            if(_setTimeToZero)
+                Time.timeScale = 0;
+            
             _actualTime = limitTime;
 
             _textUIScore.text = _currentPunctuation.ToString();
