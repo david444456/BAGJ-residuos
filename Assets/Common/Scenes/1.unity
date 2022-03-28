@@ -530,7 +530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -126.20001, y: -8.960022}
+  m_AnchoredPosition: {x: -126.20001, y: -8.960083}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &688978862
@@ -946,7 +946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.099976, y: 0}
+  m_AnchoredPosition: {x: 115.09985, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &893949207
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bef53365ccd8b44adcc1c90a3809e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limitTime: 15
+  limitTime: 65
   _setTimeToZero: 1
   playerMovement: {fileID: 998376075}
   videoPlayer: {fileID: 185204550}
