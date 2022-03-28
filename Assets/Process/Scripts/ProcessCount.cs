@@ -21,18 +21,21 @@ namespace ProcessMachine
 
         public override bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase)
         {
-            _currentWorkCount++;
-
-            if (CanStartWorkingProcess(wasteObjectsBase) && _currentWorkCount >= _maxCountForDoingWork)
+            if (CanStartWorkingProcess(wasteObjectsBase))
             {
-                _currentWorkCount = 0;
+                _currentWorkCount++;
+
+                if (_currentWorkCount >= _maxCountForDoingWork)
+                {
+                    _currentWorkCount = 0;
+                    UpdateSliderWithCount();
+                    return base.CompareNewObjectAndSetIfTheSame(wasteObjectsBase);
+                }
                 UpdateSliderWithCount();
-                return base.CompareNewObjectAndSetIfTheSame(wasteObjectsBase);
+                return true;
             }
-            else
-                UpdateSliderWithCount();  
-            
-            return true;
+
+            return false;
         }
 
         private void UpdateSliderWithCount() => _sliderCount.value = _currentWorkCount;
