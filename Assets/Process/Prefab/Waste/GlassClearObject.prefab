@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wasteTypeToDoProcess: 6
   GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 852e0f64dcd304246875dd4ac0ef5ee9, type: 3}
-  _pointsToAdd: 10
+  _pointsToAdd: 18
 --- !u!1001 &5914001138415810767
 PrefabInstance:
   m_ObjectHideFlags: 0

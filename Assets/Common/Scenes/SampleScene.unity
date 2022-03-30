@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1107117838}
     m_Modifications:
+    - target: {fileID: 1869939364, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4286503697105947364, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
       propertyPath: _factoryWaste
       value: 
@@ -1083,7 +1087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &451419967
 Transform:
   m_ObjectHideFlags: 0
@@ -7131,11 +7135,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 193719789, guid: 7b4bfa5890bacd2458d376b48c1be0d7, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 193719789, guid: 7b4bfa5890bacd2458d376b48c1be0d7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 193719790, guid: 7b4bfa5890bacd2458d376b48c1be0d7, type: 3}
       propertyPath: m_FillAmount
@@ -7197,6 +7201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProcessCompost
       objectReference: {fileID: 0}
+    - target: {fileID: 5354835338413911420, guid: 7b4bfa5890bacd2458d376b48c1be0d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6826458283450327953, guid: 7b4bfa5890bacd2458d376b48c1be0d7, type: 3}
       propertyPath: m_Size.z
       value: 2
@@ -7225,6 +7233,10 @@ PrefabInstance:
     - target: {fileID: 9067460992487694502, guid: 50164ccf66a09484a98c7a631926687d, type: 3}
       propertyPath: m_Name
       value: ProcessCompostPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067460992487694502, guid: 50164ccf66a09484a98c7a631926687d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9067460992487694523, guid: 50164ccf66a09484a98c7a631926687d, type: 3}
       propertyPath: m_RootOrder
