@@ -18,15 +18,18 @@ namespace ProcessMachine
 
         private void OnTriggerEnter(Collider other)
         {
-            if (ColliderIsPlayer(other))
+            if (ColliderIsProcess(other))
             {
-                print("Active UI");
+                other.
+                    GetComponent<IProcessMachine>().
+                    CompareNewObjectAndSetIfTheSame(new WasteBase[] { CurrentWaste });
+
             }
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (ColliderIsPlayer(other))
+            if (ColliderIsProcess(other))
             {
                 print("Desactive UI");
             }
@@ -40,7 +43,7 @@ namespace ProcessMachine
             CurrentWaste.ReturnThisObjectToThePool();
         }
 
-        private bool ColliderIsPlayer(Collider other) => other.tag == "Player";
+        private bool ColliderIsProcess(Collider other) => other.tag == "Process";
         
     }
 }
