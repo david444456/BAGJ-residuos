@@ -60,7 +60,7 @@ namespace ProcessMachine
         public void SetTimeToNormal()
         {
             Time.timeScale = 1;
-            VolumeOn.SetActive(true);
+            if(VolumeOn != null) VolumeOn.SetActive(true);
         }
 
         public void SeeVideo()
@@ -96,13 +96,13 @@ namespace ProcessMachine
 
         public void TurnOnOffVolume()
         {
-            if (VolumeOn.activeSelf)
+            if (VolumeOn.activeSelf && (VolumeOn != null) && VolumeOff != null)
             {
                 VolumeOn.SetActive(false);
                 VolumeOff.SetActive(true);
                 Music.Pause();
             }
-            else
+            else if((VolumeOn != null) && VolumeOff != null)
             {
                 VolumeOn.SetActive(true);
                 VolumeOff.SetActive(false);

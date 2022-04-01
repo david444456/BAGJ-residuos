@@ -294,7 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWork: 5
   _trasnformSpawnObject: {fileID: 4984638922230293755}
-  _wasteTypesToDoProcess: 030000000500000007000000
+  _wasteTypesToDoProcess: 0500000007000000
   _resultWasteType: 5
   _factoryWaste: {fileID: 0}
   _particleSystemFinishWork: {fileID: 1957205217}
