@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Process
   - Waste
+  - ProcessObject
   layers:
   - Default
   - TransparentFX

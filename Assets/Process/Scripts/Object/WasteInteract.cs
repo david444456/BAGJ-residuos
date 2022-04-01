@@ -18,13 +18,15 @@ namespace ProcessMachine
 
         private void OnTriggerEnter(Collider other)
         {
-            if (ColliderIsProcess(other))
+            /*if (ColliderIsProcess(other))
             {
-                other.
-                    GetComponent<IProcessMachine>().
-                    CompareNewObjectAndSetIfTheSame(new WasteBase[] { CurrentWaste });
-
-            }
+                if (other.
+                    GetComponentInParent<IProcessMachine>().
+                    CompareNewObjectAndSetIfTheSame(new WasteBase[] { CurrentWaste }))
+                {
+                    GrabObject();
+                }
+            }*/
         }
 
         private void OnTriggerExit(Collider other)
@@ -43,7 +45,7 @@ namespace ProcessMachine
             CurrentWaste.ReturnThisObjectToThePool();
         }
 
-        private bool ColliderIsProcess(Collider other) => other.tag == "Process";
+        private bool ColliderIsProcess(Collider other) => other.tag == "ProcessObject";
         
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7427606874996523453}
   m_Layer: 0
   m_Name: SM_Prop_Skip_01 (1)
-  m_TagString: Untagged
+  m_TagString: ProcessObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

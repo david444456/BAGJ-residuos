@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1520429774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9067460992487694502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1af332535ec5ff4ca4cb073aab058b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeToWork: 6
-  _trasnformSpawnObject: {fileID: 4984638922230293755}
-  _wasteTypesToDoProcess: 02000000
-  _resultWasteType: 6
-  _factoryWaste: {fileID: 0}
 --- !u!1 &7053390802934218758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,6 +4814,23 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1520429774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067460992487694502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1af332535ec5ff4ca4cb073aab058b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToWork: 6
+  _trasnformSpawnObject: {fileID: 4984638922230293755}
+  _wasteTypesToDoProcess: 02000000
+  _resultWasteType: 6
+  _factoryWaste: {fileID: 0}
 --- !u!1001 &1271233737492899688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4970,6 +4970,10 @@ PrefabInstance:
     - target: {fileID: 3284586835020563881, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181049626188088279, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8476307172396228688, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5153,6 +5157,10 @@ PrefabInstance:
     - target: {fileID: 2843044893562269532, guid: 5fee7b5764af1ab4c92cc2df76c0bbdd, type: 3}
       propertyPath: m_Name
       value: MaquinaBotella
+      objectReference: {fileID: 0}
+    - target: {fileID: 2843044893562269532, guid: 5fee7b5764af1ab4c92cc2df76c0bbdd, type: 3}
+      propertyPath: m_TagString
+      value: ProcessObject
       objectReference: {fileID: 0}
     - target: {fileID: 6271849194639203000, guid: 5fee7b5764af1ab4c92cc2df76c0bbdd, type: 3}
       propertyPath: m_RootOrder

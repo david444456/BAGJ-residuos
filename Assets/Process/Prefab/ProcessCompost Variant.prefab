@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 800715396}
   m_Layer: 0
   m_Name: BillBoard (3)
-  m_TagString: Untagged
+  m_TagString: ProcessObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62e25ef75a2216f418d06453c9ad15cb, type: 2}
+  - {fileID: 2100000, guid: 39e2840c75082ce4f972345cfdbf3e13, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 1218260967}
   m_Layer: 0
   m_Name: BillBoard (2)
-  m_TagString: Untagged
+  m_TagString: ProcessObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -400,7 +400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62e25ef75a2216f418d06453c9ad15cb, type: 2}
+  - {fileID: 2100000, guid: 39e2840c75082ce4f972345cfdbf3e13, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 1222569031}
   m_Layer: 0
   m_Name: BillBoard (1)
-  m_TagString: Untagged
+  m_TagString: ProcessObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -495,7 +495,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62e25ef75a2216f418d06453c9ad15cb, type: 2}
+  - {fileID: 2100000, guid: 39e2840c75082ce4f972345cfdbf3e13, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 5017923133778468196}
   m_Layer: 0
   m_Name: BillBoard
-  m_TagString: Untagged
+  m_TagString: ProcessObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -678,7 +678,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62e25ef75a2216f418d06453c9ad15cb, type: 2}
+  - {fileID: 2100000, guid: 39e2840c75082ce4f972345cfdbf3e13, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1273,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3284586834568870840, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_Name
-      value: ProcessCompost
+      value: ProcessCompost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3284586835020563881, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_IsActive
