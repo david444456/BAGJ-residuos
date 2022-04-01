@@ -60,6 +60,7 @@ namespace ProcessMachine
         public void SetTimeToNormal()
         {
             Time.timeScale = 1;
+            VolumeOn.SetActive(true);
         }
 
         public void SeeVideo()
