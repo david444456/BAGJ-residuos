@@ -24,6 +24,9 @@ namespace ProcessMachine
         private int _currentPunctuation = 0;
         private float _currentCountTime = 0;
         private float _actualTime;
+        public GameObject VolumeOn;
+        public GameObject VolumeOff;
+        private AudioSource Music;
 
         private void Start()
         {
@@ -34,6 +37,7 @@ namespace ProcessMachine
 
             _textUIScore.text = _currentPunctuation.ToString();
             _textTime.text = _actualTime.ToString();
+            Music = this.GetComponent<AudioSource>();
         }
 
         private void Update()
@@ -87,6 +91,22 @@ namespace ProcessMachine
         {
             _currentPunctuation += points;
             _textUIScore.text = _currentPunctuation.ToString();
+        }
+
+        public void TurnOnOffVolume()
+        {
+            if (VolumeOn.activeSelf)
+            {
+                VolumeOn.SetActive(false);
+                VolumeOff.SetActive(true);
+                Music.Pause();
+            }
+            else
+            {
+                VolumeOn.SetActive(true);
+                VolumeOff.SetActive(false);
+                Music.Play();
+            }
         }
     }
 }
