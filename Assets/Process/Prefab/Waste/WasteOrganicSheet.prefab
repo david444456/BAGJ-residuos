@@ -189,6 +189,10 @@ PrefabInstance:
       value: WasteOrganicSheet
       objectReference: {fileID: 0}
     - target: {fileID: 5387616160470680081, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
+      propertyPath: _wasteTypeToDoProcess
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387616160470680081, guid: e2dd6e15c5b9840489d635e6ba8e3da1, type: 3}
       propertyPath: GameObjectToSpawnCarry
       value: 
       objectReference: {fileID: 486258694696767613, guid: 865458dcce00c4549bfbafc5c25c4e78, type: 3}

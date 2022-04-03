@@ -20,6 +20,7 @@ namespace ProcessMachine
                     GetComponentInParent<IProcessMachine>().
                     CompareNewObjectAndSetIfTheSame(new WasteBase[] { _wasteInteract.CurrentWaste }))
                 {
+                    other.GetComponentInParent<ContactPartycleController>().StartPartycleSystem(transform.position);
                     _wasteInteract.GrabObject();
                 }
             }

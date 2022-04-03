@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 9067460992487694523}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1240661337
 MeshFilter:
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWork: 5
   _trasnformSpawnObject: {fileID: 4984638922230293755}
-  _wasteTypesToDoProcess: 0500000007000000
+  _wasteTypesToDoProcess: 050000000700000008000000
   _resultWasteType: 5
   _factoryWaste: {fileID: 0}
   _particleSystemFinishWork: {fileID: 1957205217}
@@ -575,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5d90f0d1d2e78e6419ce3ca52c7b2d6c, type: 3}
     - target: {fileID: 8181049626188088279, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8476307172396228688, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_RootOrder

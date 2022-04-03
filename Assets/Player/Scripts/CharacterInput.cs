@@ -64,8 +64,8 @@ namespace Character
         {
             if (!_isMobileActive)
             {
-                _isHoldItemPress = Input.GetKeyDown(KeyCode.E);
-                _isPushItemPress = Input.GetKeyDown(KeyCode.F);
+                _isHoldItemPress = Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0);
+                _isPushItemPress = Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(1);
             }
         }
 

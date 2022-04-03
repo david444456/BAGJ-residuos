@@ -727,7 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWork: 15
   _trasnformSpawnObject: {fileID: 8262657624654309665}
-  _wasteTypesToDoProcess: 04000000
+  _wasteTypesToDoProcess: 040000000a0000000b0000000c000000
   _resultWasteType: 9
   _factoryWaste: {fileID: 0}
   _maxCountForDoingWork: 5
@@ -1278,6 +1278,10 @@ PrefabInstance:
     - target: {fileID: 3284586835020563881, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658964774922816065, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
