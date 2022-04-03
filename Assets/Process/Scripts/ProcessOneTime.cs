@@ -9,13 +9,12 @@ namespace ProcessMachine
         [Header("Process one time")]
         [SerializeField] private GameObject _goChangeParent;
 
-        private bool _isAlreadyDoProcess = false;
+        [SerializeField] private bool _isAlreadyDoProcess = false;
 
         public override bool CompareNewObjectAndSetIfTheSame(WasteBase[] wasteObjectsBase)
         {
             if (!_isAlreadyDoProcess)
             {
-                _isAlreadyDoProcess = true;
                 return base.CompareNewObjectAndSetIfTheSame(wasteObjectsBase);
             }
 
@@ -25,6 +24,7 @@ namespace ProcessMachine
         public override WasteBase GetActualWasteFinishWorkAndFinishProcess()
         {
             _goChangeParent.transform.SetParent(transform);
+            _isAlreadyDoProcess = true;
             return base.GetActualWasteFinishWorkAndFinishProcess();
         }
     }

@@ -109,6 +109,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1740007660, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
+      propertyPath: _pointsToAdd
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740007660, guid: bf4086c691533e440878eb83a0ccef59, type: 3}
       propertyPath: _wasteTypeToDoProcess
       value: 9
       objectReference: {fileID: 0}
