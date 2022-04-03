@@ -29,14 +29,6 @@ namespace ProcessMachine
             }*/
         }
 
-        private void OnTriggerExit(Collider other)
-        {
-            if (ColliderIsProcess(other))
-            {
-                print("Desactive UI");
-            }
-        }
-
         public void GrabObject()
         {
             if(_invokeEvent) 

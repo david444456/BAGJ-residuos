@@ -16,7 +16,6 @@ namespace ProcessMachine
 
         public void StartPartycleSystem(Vector3 position)
         {
-            Debug.Log("This is sparta " + position);
             _partycleExplosion.transform.position = position;
             _partycleExplosion.Play();
         }

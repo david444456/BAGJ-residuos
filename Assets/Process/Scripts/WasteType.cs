@@ -11,6 +11,9 @@
         Clean,
         HotDog,
         ChineseFood,
-        Compost
+        Compost,
+        Vegetable1,
+        Vegetable2,
+        Sheet
     }
 }
