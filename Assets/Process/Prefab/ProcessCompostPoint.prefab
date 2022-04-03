@@ -33,7 +33,7 @@ Transform:
   - {fileID: 4298886831152126099}
   - {fileID: 4298886830089616511}
   m_Father: {fileID: 9067460992487694523}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1368415155320922988
 BoxCollider:
@@ -367,27 +367,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5652807, y: 0.7974833, z: 0.5783777}
   m_Center: {x: 0, y: 0.39874166, z: 0}
---- !u!114 &2942264445543224239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9067460992487694502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287357187e793fc44a9aab4a049309df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeToWork: 10
-  _trasnformSpawnObject: {fileID: 4984638922230293755}
-  _wasteTypesToDoProcess: 09000000
-  _resultWasteType: 6
-  _factoryWaste: {fileID: 0}
-  _particleSystemFinishWork: {fileID: 1957205217}
-  _controlGame: {fileID: 0}
-  _animationStateController: {fileID: 0}
-  _goChangeParent: {fileID: 594283194458407432}
 --- !u!1 &6870265995594351797
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +462,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.69367504, y: 1.5553548, z: 0.6392312}
   m_Center: {x: -0.00000047683716, y: 0.7776774, z: 0.00000023841858}
+--- !u!114 &2942264445543224239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067460992487694502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287357187e793fc44a9aab4a049309df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToWork: 10
+  _trasnformSpawnObject: {fileID: 4984638922230293755}
+  _wasteTypesToDoProcess: 09000000
+  _resultWasteType: 6
+  _factoryWaste: {fileID: 0}
+  _particleSystemFinishWork: {fileID: 1957205217}
+  _controlGame: {fileID: 0}
+  _animationStateController: {fileID: 0}
+  _goChangeParent: {fileID: 594283194458407432}
+  _isAlreadyDoProcess: 0
 --- !u!1001 &8413960610841734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,13 +637,17 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1.64
       objectReference: {fileID: 0}
+    - target: {fileID: 4141468499206485333, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.52
+      objectReference: {fileID: 0}
     - target: {fileID: 6061786161962721813, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5d90f0d1d2e78e6419ce3ca52c7b2d6c, type: 3}
     - target: {fileID: 8181049626188088279, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8476307172396228688, guid: a5ed65ec0538e594d8cc97faa03bd6a0, type: 3}
       propertyPath: m_RootOrder

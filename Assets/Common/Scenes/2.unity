@@ -5115,7 +5115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4847701130178891656, guid: c34ad81cb6832184f85d8a19d90a41bf, type: 3}
       propertyPath: _pointExpected
-      value: 80
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4847701130178891657, guid: c34ad81cb6832184f85d8a19d90a41bf, type: 3}
       propertyPath: m_Pivot.x
