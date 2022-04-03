@@ -26,6 +26,7 @@ namespace ProcessMachine
         private float _actualTime;
         public GameObject VolumeOn;
         public GameObject VolumeOff;
+        public GameObject Home;
         private AudioSource Music;
 
         private void Start()
@@ -61,6 +62,7 @@ namespace ProcessMachine
         {
             Time.timeScale = 1;
             if(VolumeOn != null) VolumeOn.SetActive(true);
+            if (Home != null) Home.SetActive(true);
         }
 
         public void SeeVideo()
