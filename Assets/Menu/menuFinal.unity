@@ -1859,8 +1859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 437, y: 254}
-  m_SizeDelta: {x: 156.3, y: 151.3}
+  m_AnchoredPosition: {x: 438, y: 258}
+  m_SizeDelta: {x: 137.81, y: 151.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412043464
 MonoBehaviour:
@@ -6137,8 +6137,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -458.4, y: -242}
-  m_SizeDelta: {x: 200, y: 57.526}
+  m_AnchoredPosition: {x: -458.4, y: -287}
+  m_SizeDelta: {x: 200, y: 197.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442858243
 MonoBehaviour:
@@ -6160,7 +6160,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Efectos de Sonido - Efectos varios de lavado. \nTomados del sitio https://mixkit.co/"
+  m_text: "Efectos de Sonido - Efectos varios de lavado. \nTomados del sitio https://mixkit.co/\n\nArte
+    low poly\r:                    : https://syntystore.com/\r\nAutor: Synty Studios"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

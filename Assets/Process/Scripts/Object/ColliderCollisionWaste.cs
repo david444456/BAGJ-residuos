@@ -6,6 +6,7 @@ namespace ProcessMachine
     {
         [SerializeField] private WasteInteract _wasteInteract;
 
+
         private void Start()
         {
             if (_wasteInteract == null)
@@ -20,11 +21,18 @@ namespace ProcessMachine
                     GetComponentInParent<IProcessMachine>().
                     CompareNewObjectAndSetIfTheSame(new WasteBase[] { _wasteInteract.CurrentWaste }))
                 {
+                    PlaySound();
                     other.GetComponentInParent<ContactPartycleController>().StartPartycleSystem(transform.position);
                     _wasteInteract.GrabObject();
                 }
             }
         }
+
+        private void PlaySound()
+        {
+            FindObjectOfType<SpawnerWaste>().StartSoundHitWaste();
+        }
+
         private bool ColliderIsProcess(Collider other) => other.tag == "ProcessObject";
 
     }

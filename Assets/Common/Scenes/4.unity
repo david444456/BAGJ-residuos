@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3209506072079787980, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3814031783789987272, guid: 3d04a987e90b9c04cbcbe677a765b402, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.57
@@ -5656,10 +5660,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1107117838}
     m_Modifications:
-    - target: {fileID: 517298514, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.751
-      objectReference: {fileID: 0}
     - target: {fileID: 1549540373, guid: 5220e509348f6764cb24ac1dc87b16ce, type: 3}
       propertyPath: _joystick
       value: 

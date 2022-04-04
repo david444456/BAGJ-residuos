@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8261429523403285972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5914001138548720457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4506ba009c9ab4d8021bd563c374a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wasteInteract: {fileID: 6041753899279329316}
---- !u!65 &4102791055256056319
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5914001138548720457}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7998352, y: 5.81843, z: 1.7998426}
-  m_Center: {x: 0.000015258789, y: 0, z: 0.0000022947788}
 --- !u!114 &332749298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wasteTypeToDoProcess: 2
   GameObjectToSpawnCarry: {fileID: 7981233442984792675, guid: 0342452205b976745af751e4714b07f0, type: 3}
+--- !u!65 &4102791055256056319
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5914001138548720457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7998352, y: 5.81843, z: 1.7998426}
+  m_Center: {x: 0.000015258789, y: 0, z: 0.0000022947788}
+--- !u!114 &8261429523403285972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5914001138548720457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b4506ba009c9ab4d8021bd563c374a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wasteInteract: {fileID: 6041753899279329316}
 --- !u!1001 &5914001138415810767
 PrefabInstance:
   m_ObjectHideFlags: 0

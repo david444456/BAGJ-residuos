@@ -13,6 +13,8 @@ namespace ProcessMachine
         [SerializeField] private WasteType[] _typeSpawn;
         [SerializeField] private FactoryWaste _factoryWaste;
 
+        [SerializeField] private AudioSource _audioHitObject;
+
         private void Start()
         {
             StartCoroutine(StartSpawnObjects());
@@ -39,6 +41,11 @@ namespace ProcessMachine
                     return trans;
             }
             return null;
+        }
+
+        public void StartSoundHitWaste()
+        {
+            _audioHitObject.Play();
         }
 
         private void GetAndSetNewObjectWaste(Transform trans)

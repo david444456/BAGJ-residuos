@@ -14,6 +14,8 @@ namespace ProcessMachine
         [SerializeField] private Transform _transformSpawnObject;
         [SerializeField] private Transform _transformSpawnPushObject;
 
+        [SerializeField] private AudioSource _soundPush;
+
         private CharacterInput _characterInput;
         private CharacterAnimation _characterAnimation;
         private FactoryWaste _factoryWaste;
@@ -76,6 +78,7 @@ namespace ProcessMachine
             DestroyAllObjectsInTransformSpawnPlayer();
             RequestObjectAndPush();
             LostCurrentObject();
+            _soundPush.Play();
         }
 
         private void RequestObjectAndPush()
